@@ -1,39 +1,38 @@
-#include "Sorting.h"
+#include "Sort.h"
 #include <ctime>
 #include <iostream>
 #include <random>
 
 using namespace std;
+using namespace Sort;
 
 int main(int argc, char const *argv[]) {
-  Sort a;
-
 //Random Device
   std::mt19937 rng;
   rng.seed(std::random_device()());
   std::uniform_int_distribution<std::mt19937::result_type> dist6(0,99999);
 
 //Testcases
-  int arr[10000];
-  for(int i = 9999; i >= 0; i--){
-    arr[i] = dist6(rng);
-  }
+  char arr[10];
 
-//Beenchmark
-  std::clock_t start;
-   double duration;
-   start = std::clock();
+  //Awkward
+  arr[0] = 'a';
+  arr[1] = 'Z';
+  arr[2] = 'y';
+  arr[3] = 'c';
+  arr[4] = 'B';
+  arr[5] = 'A';
+  arr[6] = 'b';
+  arr[7] = 'h';
+  arr[8] = 'd';
+  arr[9] = 'x';
+  //Awkward
 
-//Sort algorythms
-  a.selection(arr, 10000); //Algorimto
+  selection<char>(arr, 10);
 
-//Prueba
-  for(int i = 0; i < 10000; i++){
+  for(int i = 0; i < 10; i++){
     cout << arr[i] << endl;
   }
 
-  duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
-   std::cout<<"Benchmark selection sort 10000 elements: "<< duration << " seconds"<< endl;
-//end of Benchmark
   return 0;
 }

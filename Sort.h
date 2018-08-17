@@ -15,9 +15,15 @@
 */
 namespace Sort{
 
-//Selection Sort
+  //Bubble Sort
+  template <typename T>
+  void bubbleSort(T* array, int size){
+    //Code
+  }
+
+  //Selection Sort
   template <typename T> //Define as DataType, not DataType*
-  void selection(T * array, int size){ //Array of T Data, and int Size
+  void selectionSort(T* array, int size){ //Array of T Data, and int Size
     T pivot, min;
     for (int i = 0; i < size; i++){ //Iterates trough the full array
       min = i;
@@ -33,7 +39,38 @@ namespace Sort{
   }
 
 
-};
+  //Insertion Sort
+  template <typename T>
+  void insertionSort(T* array, int size){
+    //Code
+  }
 
+
+  //Merge Sort
+  template <typename T>
+  void mergeSort(T* array, int size){
+    //Code
+  }
+
+
+  //Heap Sort
+  template <typename T>
+  void heapSort(T* array, int size){
+    //Code
+  }
+
+
+  //Radix Sort
+  template <typename T>
+  void radixSort(T* array, int size){
+    //Code
+  }
+
+  //Quick Sort
+  template <typename T>
+  void QuickSort(T* array, int size){
+    //Code
+  }
+};
 
 #endif // _Sort

@@ -41,8 +41,17 @@ namespace Sort{
 
   //Insertion Sort
   template <typename T>
-  void insertionSort(T* array, int size){
-    //Code
+  void insertionSort(T* array,  int size){
+    T key;  //Sets a Pivot or "key"
+    for(int i = 1;  i < size; i++){ //Go trough the array
+      key = array[i];
+      int j = i - 1;  //Start point at the end of sorted array
+      while(j >=  0 &&  array[j]  > key){ //Moves the sorted array to "insertion" point
+        array[j + 1]  = array[j];
+        j--;
+      }
+      array[j + 1]  =  key; //Insertion
+    }
   }
 
 

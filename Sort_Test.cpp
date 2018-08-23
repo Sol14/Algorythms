@@ -52,6 +52,7 @@ int main(int argc, char const *argv[]) {
   clock_t start;
   double duration;
   start = clock();
+  //Case Selection
   switch (algNumber) {
     case 1:
       cout << "Sorting by BubbleSort" << endl;
@@ -95,9 +96,10 @@ int main(int argc, char const *argv[]) {
   duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
   cout << "Test time: " << duration << " seconds" << endl;
   file << "Test time: " << duration << " seconds" << endl;
+  //End of Benchmark
 
+  //Test compare
   cout << "Testing correct answer" << endl;
-
   selectionSort(passed, size);
   bool allpass = true;
   for(int i = 0; i < size; i++){
@@ -115,6 +117,8 @@ int main(int argc, char const *argv[]) {
     file << "Status: Failed" << endl;
   }
 
+
+//Fill file of test elements
   cout << "Array: " << endl;
   file << "Array: " << endl;
   for(int i = 0; i < size; i++){

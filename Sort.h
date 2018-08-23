@@ -1,7 +1,9 @@
+#include <iostream>
+
 /*
-**  Started: 15/8/18
+Started: 15/8/18
 **  luiscarlosquesada@gmail.com
-**  last edition: 17/8/18
+**  last edition: 20/8/18
 */
 
 #ifndef _Sort
@@ -58,7 +60,12 @@ namespace Sort{
   //Merge Sort
   template <typename T>
   void mergeSort(T* array, int size){
-    //Code
+    /*if (size = 1){
+      return array;
+    }
+    else{
+
+    }*/
   }
 
 

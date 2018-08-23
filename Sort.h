@@ -59,13 +59,13 @@ namespace Sort{
 
   //Merge Sort
   template <typename T>
-  T* mergeSort(T* array, int size){
-    if (size = 1){
+  void mergeSort(T* array, int size){
+    /*if (size = 1){
       return array;
     }
     else{
-      
-    }
+
+    }*/
   }
 
 

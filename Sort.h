@@ -3,7 +3,7 @@
 /*
 Started: 15/8/18
 **  luiscarlosquesada@gmail.com
-**  last edition: 20/8/18
+**  last edition: 23/8/18
 */
 
 #ifndef _Sort
@@ -54,18 +54,6 @@ namespace Sort{
       }
       array[j + 1]  =  key; //Insertion
     }
-  }
-
-
-  //Merge Sort
-  template <typename T>
-  void mergeSort(T* array, int size){
-    /*if (size = 1){
-      return array;
-    }
-    else{
-
-    }*/
   }
 
 

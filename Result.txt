@@ -54,3 +54,16 @@ Test 0 on 400000 elements
 Approved: 1
 Test time: 234.167 seconds
 Test 1 on 400000 elements
+Approved: 1
+Test time: 252.305 seconds
+Test 2 on 400000 elements
+Approved: 1
+Test time: 248.142 seconds
+Test 3 on 400000 elements
+Approved: 1
+Test time: 243.806 seconds
+Test 4 on 400000 elements
+Approved: 1
+Test time: 237.83 seconds
+
+

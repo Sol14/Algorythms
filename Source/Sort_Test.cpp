@@ -1,11 +1,10 @@
 #include <fstream>
-#include "Sort.h"
+#include "Ordenador.h"
 #include <ctime>
 #include <iostream>
 #include <random>
 
 using namespace std;
-using namespace Sort;
 
 int * getRandom(int i)
 {
@@ -37,13 +36,14 @@ bool isCorrect(int * array, int length)
 
 int main(int argc, char const *argv[])
 {
+	Ordenador ord;
 	ofstream nfile(argv[1]);
 	std::clock_t start;
 	 double duration;
 
 	 for(int k = 0; k < 3; k++)
 	 {
-		 switch (i) {
+		 switch (k) {
 			 case 0:
 				 nfile << "Testing Insertion Sort: " << endl;
 				 break;
@@ -53,6 +53,7 @@ int main(int argc, char const *argv[])
 			 case 2:
 				 nfile << "Testing Merge Sort: " << endl;
 				 break;
+			 }
 
 		 for(int i = 0; i < 4; i ++)
 		 {
@@ -74,28 +75,27 @@ int main(int argc, char const *argv[])
 				for(int j = 0; j < 5; j++){
 					int * array = getRandom(size);
 					nfile << "Test " << j << " on " << size << " elements" << endl;
-
-					start = std::clock();
-					switch (i) {
+					switch (k) {
 						case 0:
 							start = std::clock();
-							insertionSort(array, size);
+							ord.insercion(array, size);
 							duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
 							break;
 						case 1:
 							start = std::clock();
-							selectionSort(array, size);
+							ord.seleccion(array, size);
 							duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
 							break;
-						/*case 2:
+						case 2:
 							start = std::clock();
-							mergeSort(array, size);
+							ord.mergesort(array, size);
 							duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
 							break;
-							*/
+						}
 					nfile << "Approved: " << isCorrect(array, size) << endl;
 					nfile << "Test time: " << duration << " seconds" << endl;
 					delete array;
+					nfile << endl;
 				}
 				nfile << endl << endl;
 			}

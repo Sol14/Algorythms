@@ -1,0 +1,256 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[twocolumn,english,journal]{IEEEtran}
+\usepackage{newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\synctex=-1
+\usepackage{babel}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+ % protect \markboth against an old bug reintroduced in babel >= 3.8g
+ \let\oldforeign@language\foreign@language
+ \DeclareRobustCommand{\foreign@language}[1]{%
+   \lowercase{\oldforeign@language{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfkeys{/pgf/number format/.cd, set thousands separator=\,}
+
+\makeatother
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listing}
+
+\begin{document}
+
+\title{Title}
+
+
+\author{Name and ID}
+
+
+\markboth{Data Structures and Analysis of Algorithms -- Homework 1 -- My name}{}
+\maketitle
+\begin{abstract}
+In this work\ldots{} For this,\ldots{} The results obtained\ldots{}
+In conclusion,\ldots{} (everything in \emph{one} paragraph).
+\end{abstract}
+
+
+\section{Introduction}
+
+\IEEEPARstart{In}{ this work}\ldots{} Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua.
+
+
+\section{Methodology}
+
+To answer this question\ldots{} Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+The code is shown in the appendix. It is based on the pseudocode in
+the book of Cormen et al~\cite{Cormen:2009}. Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua.
+
+
+\section{Results}
+
+The execution time of running teach of the algorithms several times
+is shown in Table~\ref{tab:tiempos}.
+\begin{table}
+\caption{Execution time of sorting algorithms.\label{tab:tiempos}}
+
+
+\centering{}%
+\begin{tabular}{lrrrrrrr}
+\toprule 
+ &  & \multicolumn{6}{c}{Time (ms)}\tabularnewline
+\cmidrule{3-8} 
+ &  & \multicolumn{5}{c}{Execution} & \tabularnewline
+\cmidrule{3-7} 
+Algorithm & Size (k) & 1 & 2 & 3 & 4 & 5 & Mean\tabularnewline
+\midrule 
+Selection  & $10$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $20$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $30$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $40$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+\midrule
+Insertion  & $10$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $20$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $30$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $40$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+\midrule
+Merge  & $10$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $20$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $30$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+ & $40$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$ & $12.3$\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
+ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua.
+
+The mean execution times are plotted in Figure~\ref{fig:lin}.
+\begin{figure*}
+\begin{centering}
+\includegraphics[width=1\textwidth]{lin-eng}
+\par\end{centering}
+
+\caption{Average execution time of sorting algorithms. \label{fig:lin}}
+\end{figure*}
+ The shape of the curves was not as expected because we made up the
+numbers. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+et dolore magna aliquyam erat, sed diam voluptua.
+
+For comparison purposes, the curves are shown together in the same
+graph in Figure~\ref{fig:log}.
+\begin{figure*}
+\begin{centering}
+\includegraphics[width=0.5\textwidth]{log-eng}
+\par\end{centering}
+
+\caption{Comparing mean running times of sorting algorithms.\label{fig:log}}
+\end{figure*}
+ No comments\ldots{} Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+
+\section{Conclusions}
+
+From the results we can conclude that\ldots{} Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua.
+
+
+\appendices{}
+
+
+\section{Code}
+
+Algorithms \ref{alg:pura-vida} and \ref{alg:hello-world} show the
+code used in this work.
+
+\begin{algorithm}
+\caption{Algorithm that displays Tico's most popular expression.\label{alg:pura-vida}}
+
+
+\begin{lstlisting}[language={[ANSI]C++}]
+int main() {
+	cout << 'Pura vida!\n';
+	return 0; 
+}
+\end{lstlisting}
+\end{algorithm}
+\begin{algorithm*}
+\caption{First program of any Computer Science student. If the code does not
+fit in one column, use the \textquotedblleft span columns\textquotedblright{}
+option in the settings of the float (just like this floating algorithm).
+In \protect\LaTeX{} use the \emph{starred} version of algorithm (i.e., \texttt{\textbackslash{}begin\{algorithm{*}\}}
+and \texttt{\textbackslash{}end\{algorithm{*}\}})\label{alg:hello-world}}
+
+
+\lstinputlisting[language={C++}]{Hello_world.cpp}
+\end{algorithm*}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{Referencias}
+
+\begin{IEEEbiography}[{\fbox{\begin{minipage}[t][1.25in]{1in}%
+Replace this box by an image with a width of 1\,in and a height of
+1.25\,in!%
+\end{minipage}}}]{Your Name}
+ All about you and the what your interests are.\end{IEEEbiography}
+
+
+\end{document}

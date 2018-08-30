@@ -1,0 +1,46 @@
+\documentclass[twocolumn,english,journal]{IEEEtran}
+\usepackage{newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\synctex=-1
+\usepackage{babel}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+\makeatletter
+\providecommand{\tabularnewline}{\\}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
+ \let\oldforeign@language\foreign@language
+ \DeclareRobustCommand{\foreign@language}[1]{%
+   \lowercase{\oldforeign@language{#1}}}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfkeys{/pgf/number format/.cd, set thousands separator=\,}
+\makeatother
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listing}
+
+
+
+
+
+\begin{document}
+\title{Efficiency comparison of sorting algorithms}
+\author{Luis Carlos Quesada R.	B65580}
+\markboth{Analysis of algorithms and data structure -- Homework 1 -- Luis Carlos Quesada}{}
+\maketitle
+
+\begin{abstract}
+Comparison of a small set of sorting algorithms, using the amount of work and time to achieve the task, as parameters of efficiency
+\end{abstract}
+
+\end{document}

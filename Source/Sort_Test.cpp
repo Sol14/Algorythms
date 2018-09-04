@@ -60,16 +60,16 @@ int main(int argc, char const *argv[])
 				int size;
 				switch (i) {
 					case 0:
-						size = 50000;
-						break;
-					case 1:
-						size = 100000;
-						break;
-					case 2:
 						size = 200000;
 						break;
-					case 3:
+					case 1:
 						size = 400000;
+						break;
+					case 2:
+						size = 800000;
+						break;
+					case 3:
+						size = 1200000;
 						break;
 				}
 				for(int j = 0; j < 5; j++){

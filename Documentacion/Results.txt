@@ -1,0 +1,279 @@
+Testing Insertion Sort: 
+Test 0 on 200000 elements
+Approved: 1
+Test time: 33.3775 seconds
+
+Test 1 on 200000 elements
+Approved: 1
+Test time: 33.2502 seconds
+
+Test 2 on 200000 elements
+Approved: 1
+Test time: 33.2417 seconds
+
+Test 3 on 200000 elements
+Approved: 1
+Test time: 33.2961 seconds
+
+Test 4 on 200000 elements
+Approved: 1
+Test time: 33.2953 seconds
+
+
+
+Test 0 on 400000 elements
+Approved: 1
+Test time: 133.262 seconds
+
+Test 1 on 400000 elements
+Approved: 1
+Test time: 133.651 seconds
+
+Test 2 on 400000 elements
+Approved: 1
+Test time: 133.241 seconds
+
+Test 3 on 400000 elements
+Approved: 1
+Test time: 133.512 seconds
+
+Test 4 on 400000 elements
+Approved: 1
+Test time: 133.032 seconds
+
+
+
+Test 0 on 800000 elements
+Approved: 1
+Test time: 533.791 seconds
+
+Test 1 on 800000 elements
+Approved: 1
+Test time: 532.604 seconds
+
+Test 2 on 800000 elements
+Approved: 1
+Test time: 532.674 seconds
+
+Test 3 on 800000 elements
+Approved: 1
+Test time: 533.497 seconds
+
+Test 4 on 800000 elements
+Approved: 1
+Test time: 533.648 seconds
+
+
+
+Test 0 on 1200000 elements
+Approved: 1
+Test time: 1202.06 seconds
+
+Test 1 on 1200000 elements
+Approved: 1
+Test time: 1202.59 seconds
+
+Test 2 on 1200000 elements
+Approved: 1
+Test time: 1203.33 seconds
+
+Test 3 on 1200000 elements
+Approved: 1
+Test time: 1201.92 seconds
+
+Test 4 on 1200000 elements
+Approved: 1
+Test time: 1203.84 seconds
+
+
+
+
+
+
+
+Testing Selection Sort: 
+Test 0 on 200000 elements
+Approved: 1
+Test time: 53.6833 seconds
+
+Test 1 on 200000 elements
+Approved: 1
+Test time: 53.6526 seconds
+
+Test 2 on 200000 elements
+Approved: 1
+Test time: 53.464 seconds
+
+Test 3 on 200000 elements
+Approved: 1
+Test time: 53.4723 seconds
+
+Test 4 on 200000 elements
+Approved: 1
+Test time: 53.6212 seconds
+
+
+
+Test 0 on 400000 elements
+Approved: 1
+Test time: 214.125 seconds
+
+Test 1 on 400000 elements
+Approved: 1
+Test time: 214.547 seconds
+
+Test 2 on 400000 elements
+Approved: 1
+Test time: 214.276 seconds
+
+Test 3 on 400000 elements
+Approved: 1
+Test time: 214.089 seconds
+
+Test 4 on 400000 elements
+Approved: 1
+Test time: 213.997 seconds
+
+
+
+Test 0 on 800000 elements
+Approved: 1
+Test time: 858.241 seconds
+
+Test 1 on 800000 elements
+Approved: 1
+Test time: 858.343 seconds
+
+Test 2 on 800000 elements
+Approved: 1
+Test time: 860.513 seconds
+
+Test 3 on 800000 elements
+Approved: 1
+Test time: 858.499 seconds
+
+Test 4 on 800000 elements
+Approved: 1
+Test time: 858.792 seconds
+
+
+
+Test 0 on 1200000 elements
+Approved: 1
+Test time: 1984.89 seconds
+
+Test 1 on 1200000 elements
+Approved: 1
+Test time: 1956.05 seconds
+
+Test 2 on 1200000 elements
+Approved: 1
+Test time: 1955.1 seconds
+
+Test 3 on 1200000 elements
+Approved: 1
+Test time: 1959.71 seconds
+
+Test 4 on 1200000 elements
+Approved: 1
+Test time: 1960.8 seconds
+
+
+
+
+
+
+
+Testing Merge Sort: 
+Test 0 on 200000 elements
+Approved: 1
+Test time: 0.050589 seconds
+
+Test 1 on 200000 elements
+Approved: 1
+Test time: 0.05039 seconds
+
+Test 2 on 200000 elements
+Approved: 1
+Test time: 0.050293 seconds
+
+Test 3 on 200000 elements
+Approved: 1
+Test time: 0.050622 seconds
+
+Test 4 on 200000 elements
+Approved: 1
+Test time: 0.050291 seconds
+
+
+
+Test 0 on 400000 elements
+Approved: 1
+Test time: 0.109111 seconds
+
+Test 1 on 400000 elements
+Approved: 1
+Test time: 0.105656 seconds
+
+Test 2 on 400000 elements
+Approved: 1
+Test time: 0.105492 seconds
+
+Test 3 on 400000 elements
+Approved: 1
+Test time: 0.105874 seconds
+
+Test 4 on 400000 elements
+Approved: 1
+Test time: 0.106049 seconds
+
+
+
+Test 0 on 800000 elements
+Approved: 1
+Test time: 0.219725 seconds
+
+Test 1 on 800000 elements
+Approved: 1
+Test time: 0.219248 seconds
+
+Test 2 on 800000 elements
+Approved: 1
+Test time: 0.219074 seconds
+
+Test 3 on 800000 elements
+Approved: 1
+Test time: 0.21972 seconds
+
+Test 4 on 800000 elements
+Approved: 1
+Test time: 0.219551 seconds
+
+
+
+Test 0 on 1200000 elements
+Approved: 1
+Test time: 0.337155 seconds
+
+Test 1 on 1200000 elements
+Approved: 1
+Test time: 0.358163 seconds
+
+Test 2 on 1200000 elements
+Approved: 1
+Test time: 0.337052 seconds
+
+Test 3 on 1200000 elements
+Approved: 1
+Test time: 0.336481 seconds
+
+Test 4 on 1200000 elements
+Approved: 1
+Test time: 0.336274 seconds
+
+
+
+
+
+
+

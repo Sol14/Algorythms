@@ -37,10 +37,21 @@ void Ordenador::mergesort(int * arreglo, int tamano){
 
 
 
-void Ordenador::heapsort(int * arreglo, int tamano){}
-void Ordenador::quicksort(int * arreglo, int tamano){}
-void Ordenador::radixsort(int * arreglo, int tamano){}
-int Ordenador::mediana(int * arreglo, int tamano){}
+void Ordenador::heapsort(int * arreglo, int tamano){
+
+}
+
+void Ordenador::quicksort(int * arreglo, int tamano){
+  rquicksort(arreglo, 0, tamano - 1);
+}
+
+void Ordenador::radixsort(int * arreglo, int tamano){
+
+}
+
+int Ordenador::mediana(int * arreglo, int tamano){
+
+}
 
 
 
@@ -106,4 +117,31 @@ void Ordenador::rmergesort(int * arreglo, int l, int r){	//limite left, limite r
     rmergesort(arreglo, m+1, r);
     merge(arreglo, l, m, r);
   }
+}
+
+void Ordenador::rquicksort(int * arreglo, int menor, int mayor){
+  if(menor < mayor){
+    int pivote = particion(arreglo, menor, mayor);
+    rquicksort(arreglo, menor, pivote - 1);
+    rquicksort(arreglo, pivote + 1, mayor);
+  }
+}
+
+int Ordenador::particion(int* arreglo, int menor, int mayor){
+  int swap;
+  int pivote = arreglo[mayor];
+  int i = menor - 1;
+  for(int j = menor; j < mayor; j++){
+    if(arreglo[j] <= pivote){
+      i++;
+      swap = arreglo[i];
+      arreglo[i] = arreglo[j];
+      arreglo[j] = swap;
+    }
+  }
+
+  swap = arreglo[i+1];
+  arreglo[i+1] = arreglo[mayor];
+  arreglo[mayor] = swap;
+  return i+1;
 }

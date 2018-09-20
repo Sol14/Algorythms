@@ -42,10 +42,8 @@ int main(int argc, char const *argv[])
 	for(int i = 0; i < 15; i++){
 		cout << array[i] << endl;
 	}
-	cout << endl << endl;
-
-	ord.quicksort(array, 15);
-
+	cout << endl;
+	ord.heapsort(array, 15);
 	for(int i = 0; i < 15; i++){
 		cout << array[i] << endl;
 	}

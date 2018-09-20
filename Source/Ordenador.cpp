@@ -35,29 +35,51 @@ void Ordenador::mergesort(int * arreglo, int tamano){
 }
 
 
-
-
 void Ordenador::heapsort(int * arreglo, int tamano){
+  for(int i = tamano/2 - 1; i >= 0; i--){
+    heap(arreglo, tamano, i);
+  }
 
+  for(int i = tamano-1; i >= 0; i--){
+    swap(arreglo[0], arreglo[i]);
+    heap(arreglo, i, 0);
+  }
 }
+
 
 void Ordenador::quicksort(int * arreglo, int tamano){
   rquicksort(arreglo, 0, tamano - 1);
 }
 
+
 void Ordenador::radixsort(int * arreglo, int tamano){
 
 }
 
-int Ordenador::mediana(int * arreglo, int tamano){
 
+int Ordenador::mediana(int * arreglo, int tamano){
+  int mediana = floor((tamano - 1) / 2);
+  return rmediana(arreglo, 0, tamano - 1, mediana);
 }
 
 
-
-
-
-
+int Ordenador::rmediana(int * arreglo, int menor, int mayor, int ind){
+  int pivote = particion(arreglo, menor, mayor);
+  if(ind == pivote){
+    return arreglo[pivote];
+  }
+  if(menor < mayor){
+      if(pivote > ind){
+        return rmediana(arreglo, menor, pivote - 1, ind);
+      }
+      else{
+        return rmediana(arreglo, pivote + 1, mayor, ind);
+      }
+  }
+  else{
+    return -1; //A veces se va por acá, revisar mañana despues del café
+  }
+}
 
 
 void Ordenador::merge(int * arreglo, int l, int m, int r){
@@ -73,9 +95,6 @@ void Ordenador::merge(int * arreglo, int l, int m, int r){
   for(int i = 0;i < td; i++){
     R[i] = arreglo[m + i + 1];
   }
-  //Acá difiere bastante al libro,
-  //en el libro no veo la parte donde hace la copia
-  //cuando uno de los 2 arreglos se ordena
   while(i < ti && j < td){
     if (L[i] <= R[j])
       {
@@ -102,14 +121,8 @@ void Ordenador::merge(int * arreglo, int l, int m, int r){
       k++;
   }
 }
-/*
-**	Basicamente es lo que estaba en el libro
-**	el codigo es casi igual en todos los lugares
-**	de referencia, aunque mi idea inicial era
-**	dividir el tamanoarreglo desde el mergesort, no en el merge
-**	pero consumía una cantidad de memoria, notablmente
-**	más grande
-*/
+
+
 void Ordenador::rmergesort(int * arreglo, int l, int r){	//limite left, limite rigth
   if(l < r){
     int m = l+(r-l)/2; //Resulta el medio de l y r
@@ -119,6 +132,7 @@ void Ordenador::rmergesort(int * arreglo, int l, int r){	//limite left, limite r
   }
 }
 
+
 void Ordenador::rquicksort(int * arreglo, int menor, int mayor){
   if(menor < mayor){
     int pivote = particion(arreglo, menor, mayor);
@@ -126,6 +140,7 @@ void Ordenador::rquicksort(int * arreglo, int menor, int mayor){
     rquicksort(arreglo, pivote + 1, mayor);
   }
 }
+
 
 int Ordenador::particion(int* arreglo, int menor, int mayor){
   int swap;
@@ -144,4 +159,29 @@ int Ordenador::particion(int* arreglo, int menor, int mayor){
   arreglo[i+1] = arreglo[mayor];
   arreglo[mayor] = swap;
   return i+1;
+}
+
+
+void Ordenador::heap(int * arreglo, int n, int i){
+  int mayor = i;
+  int izq = 2 * i + 1;
+  int der = 2 * i + 2;
+  if (izq < n && arreglo[izq] > arreglo[mayor]) {
+    mayor = izq;
+  }
+  if (der < n && arreglo[der] > arreglo[mayor]) {
+    mayor = der;
+  }
+  if(mayor != i){
+    swap(arreglo[i], arreglo[mayor]);
+    heap(arreglo, n, mayor);
+  }
+}
+
+
+void Ordenador::swap(int& i, int& j){
+	int swap;
+	swap = i;
+	i = j;
+	j = swap;
 }
